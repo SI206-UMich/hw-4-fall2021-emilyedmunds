@@ -190,6 +190,7 @@ class TestAllMethods(unittest.TestCase):
         # Please follow the instructions below to create three different kinds of test cases 
         # Test case 1: the stall does not have this food item: 
         self.assertEqual(s6.has_item('Bananas', 2), False)
+        self.assertEqual(s6.has_item('Burger', 2), False)
         # Test case 2: the stall does not have enough food item: 
         self.assertEqual(s6.has_item('Milkshake', 100), False)
         # Test case 3: the stall has the food item of the certain quantity: 
